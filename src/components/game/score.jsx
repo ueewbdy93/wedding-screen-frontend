@@ -81,7 +81,7 @@ function Score(props) {
               {top10.slice(5, 10).map(p => <ScoreItem key={p.id} player={p} isCurrentPlayer={p.id === id} />)}
             </ul>
           </div>
-          <div className="col-sm-12">
+          <div className="col-sm-12 col-lg-4 offset-lg-4 col-md-6 offset-md-3">
             <ul className="list-unstyled mb-0">
               {player.rank > 11 && <li><i className="fas fa-ellipsis-v"></i></li>}
               {player.rank > 10 && <ScoreItem player={player} isCurrentPlayer={true} />}

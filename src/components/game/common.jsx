@@ -7,7 +7,9 @@ export function Container({ children }) {
       <footer className="mastfoot mt-auto">
         <div className="inner">
           <small>{`Power by dy93 & ueewbd `}
-            <a href="https://github.com/ueewbdy93/wedding-screen" target="_blank">
+            <a 
+              href="https://github.com/ueewbdy93/wedding-screen" 
+              rel="noopener noreferrer" target="_blank">
               <i className="fab fa-github" style={{ color: '#6c757d' }}></i>
             </a>
           </small>
