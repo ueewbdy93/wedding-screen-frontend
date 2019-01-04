@@ -47,7 +47,7 @@ function GameStatus(props) {
   const { options, answer } = question;
   return (
     <div>
-      <h4>Q. {question.text}</h4>
+      <h4>{question.text}</h4>
       <div>
         {
           options.map((option, i) => {
