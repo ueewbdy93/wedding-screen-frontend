@@ -14,7 +14,7 @@ const initialState = {
   players: [],
   question: null,
   options: [],
-  answer: null,
+  answers: null,
   intervalMs: 8000,
   vote: null,
   curVote: null,

@@ -109,7 +109,7 @@ function QA(props) {
     question,
     options,
     curVote,
-    answer,
+    answers,
     player: { id },
     players,
     selectOption,
@@ -154,7 +154,7 @@ function QA(props) {
                       order={i}
                       key={option.id}
                       showAnswer={showAnswer}
-                      isAnswer={showAnswer ? answer.id === option.id : false}
+                      isAnswer={showAnswer && answers.indexOf(option.id) !== -1}
                       isSelect={curVote && curVote.optionId === option.id}
                       disabled={disabled}
                       onClick={() => disabled ? null : selectOption(option.id)}
@@ -170,7 +170,7 @@ function QA(props) {
                       order={i + 2}
                       key={option.id}
                       showAnswer={showAnswer}
-                      isAnswer={showAnswer ? answer.id === option.id : false}
+                      isAnswer={showAnswer && answers.indexOf(option.id) !== -1}
                       isSelect={curVote && curVote.optionId === option.id}
                       disabled={disabled}
                       onClick={() => disabled ? null : selectOption(option.id)}
